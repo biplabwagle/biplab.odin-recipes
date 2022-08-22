@@ -26,8 +26,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: silk-screen;
+  src: url("./assets/fonts/Silkscreen-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --font-primary: "Roboto";
+  --font-display: "silk-screen";
   --clr-primary: #1C3879;
   --clr-secondary: #607EAA;
   --clr-primary-light: #EAE3D2;
@@ -51,7 +59,7 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 10px auto;
+  margin: 0 auto;
   background-color: var(--clr-primary-light);
   width: 70vw;
   min-height: 100vh;
@@ -59,10 +67,18 @@ body {
   box-shadow: 5px 5px 15px 5px var(--clr-primary-dark);
   outline: 5px solid var(--clr-secondary);
   border-radius: 0.8rem;
+  display: grid;
 }
 
+.navbar-header {
+  font-size: 4.25rem;
+  text-align: center;
+  font-family: var(--font-display);
+  color: var(--clr-secondary);
+  text-shadow: 2px 2px var(--clr-primary-dark);
+}
 
-@media(max-width: 500px) {
+@media screen and (max-width: 720px) {
   .container {
     max-width: 100%;
     width: 95vw;
