@@ -1,4 +1,33 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/fonts/Roboto-Regular.ttf) type("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/fonts/Roboto-Italic.ttf) type("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/fonts/Roboto-Bold.ttf) type("truetype");
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/fonts/Roboto-Medium.ttf) type("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
 :root {
+  --font-primary: "Roboto";
   --clr-primary: #1C3879;
   --clr-secondary: #607EAA;
   --clr-primary-light: #EAE3D2;
@@ -15,6 +44,7 @@
 
 body {
   background-color: var(--clr-primary);
+  font-family: var(--font-primary);
 }
 
 .container {
