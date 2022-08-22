@@ -1,0 +1,37 @@
+:root {
+  --clr-primary: #1C3879;
+  --clr-secondary: #607EAA;
+  --clr-primary-light: #EAE3D2;
+  --clr-secondary-light: #F9F5EB;
+  --clr-primary-dark: #000;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  background-color: var(--clr-primary);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 10px auto;
+  background-color: var(--clr-primary-light);
+  width: 70vw;
+  min-height: 100vh;
+  padding: 1rem;
+  box-shadow: 5px 5px 15px 5px var(--clr-primary-dark);
+  outline: 5px solid var(--clr-secondary);
+  border-radius: 0.8rem;
+}
+
+@media(max-width: 500px) {
+  .container {
+    max-width: 100%;
+    width: 95vw;
+  }
+}
