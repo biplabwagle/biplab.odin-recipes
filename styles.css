@@ -1,3 +1,4 @@
+/* font faces. There are more on the fonts folder to be used in case a update is needed.But for now these are the ones used: */
 @font-face {
   font-family: "Roboto";
   src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
@@ -33,6 +34,7 @@
   font-style: normal;
 }
 
+/* specifying global variables */
 :root {
   --font-primary: "Roboto";
   --font-display: "silk-screen";
@@ -43,7 +45,9 @@
   --clr-primary-dark: #000;
 }
 
+/* root selector */
 * {
+  /* sets the box-sizing(meaning include padding and margin to the final box size), and sets padding and margin by to 0 overrides defaults */
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -57,7 +61,7 @@ body {
 }
 
 
-
+/* Main container  */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -70,6 +74,7 @@ body {
   border-radius: 0.8rem;
 }
 
+/* Navbar header section */
 .navbar-header {
   font-size: 4.25rem;
   text-align: center;
@@ -78,6 +83,7 @@ body {
   text-shadow: 2px 2px var(--clr-primary-dark);
 }
 
+/* main content of the page. This one sets up grid functionality for the contained elements */
 .main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -89,6 +95,7 @@ body {
   justify-items: center;
 }
 
+
 .main-section {
   background-color: var(--clr-secondary);
   padding: 20px;
@@ -96,6 +103,7 @@ body {
 
 }
 
+/* img responsive to width of container */
 .main-section img {
   width: 100%;
 }
@@ -107,6 +115,7 @@ body {
   padding: 15px;
 }
 
+/* animation for the back to home button */
 @keyframes animBtn {
   0% {
     transform: scale(1);
@@ -138,7 +147,7 @@ body {
 
 }
 
-
+/* creates horizontal bar effect on a tag, :hover::before goes along with this to create the effect.*/
 .main-section--link::before {
   content: '';
   width: 100%;
@@ -163,6 +172,7 @@ body {
   -webkit-transform: scaleX(1);
 }
 
+/* recipe section */
 .main-recipes {
   display: flex;
   align-items: center;
@@ -200,6 +210,7 @@ body {
   font-size: 1.2em;
 }
 
+/* horizontal bar hover effect on the links on the main page */
 .main-recipes--link::after {
   content: '';
   display: block;
@@ -241,7 +252,7 @@ body {
   line-height: 2;
 }
 
-
+/* reponsive design for midsize and small devices */
 @media screen and (max-width: 992px) {
   .container {
     max-width: 100%;
@@ -257,10 +268,12 @@ body {
     align-items: center;
   }
 
+  /* aligns button so that it is not centered from the align-items:center above */
   .main p {
     align-self: start;
   }
 
+  /* reset the grid column and row for column layout */
   .main-ingredient {
     grid-column: auto;
     grid-row: auto;
