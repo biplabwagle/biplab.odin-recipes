@@ -21,14 +21,14 @@
 }
 
 @font-face {
-  font-family: Roboto;
+  font-family: "Roboto";
   src: url("./assets/fonts/Roboto-Medium.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: silk-screen;
+  font-family: "silk-screen";
   src: url("./assets/fonts/Silkscreen-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -55,7 +55,7 @@
 
 
 body {
-  background-color: var(--clr-primary);
+  background-color: var(--clr-secondary-light);
   font-family: var(--font-primary);
   color: var(--clr-primary);
 }
@@ -65,13 +65,10 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: var(--clr-primary-light);
   width: 70vw;
   min-height: 100vh;
   padding: 1rem;
-  box-shadow: 5px 5px 15px 5px var(--clr-primary-dark);
-  outline: 5px solid var(--clr-secondary);
-  border-radius: 0.8rem;
+  box-shadow: 5px 5px 20px 10px var(--clr-primary-dark);
 }
 
 /* Navbar header section */
